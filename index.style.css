@@ -5,9 +5,15 @@ nav {
     padding: 10px;
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    
     justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+nav .logo--link{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
 .logo--bar h1::before {
     content: "";
     background-image: url("square.svg");
@@ -21,7 +27,7 @@ nav {
 
 .menu--bar {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
 
 }
 .drop--down {
@@ -30,7 +36,7 @@ nav {
 .drop--down--item {
     display: none;
     position: absolute;
-
+    gap: 1em;
 
     opacity: 0;
     transition: .3s ease;
@@ -40,12 +46,15 @@ nav {
     align-items: center;
     gap: 1em;
 }
-.item:hover {
+.item:hover .item::after {
+    content: "";
+    padding: 20px;
+    background-color: darkcyan;
     background-image: url("images/home/arrow.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: 30px;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
 }
 .drop--down .drop--down--item .item > img {
     width: 40px ;
@@ -63,7 +72,7 @@ font-size: 120%;
 width: 300px;
 padding: 20px;
 
-transition: all .3s ease-in;
+transition: .3s ease-in;
 }
 
 
@@ -80,4 +89,79 @@ transition: all .3s ease-in;
 }
 .user--auth .btn--sign-in {
     background-color: white;
+}
+
+/* introduction sectoin */
+.introduction {
+    
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    
+    font-size: 160%;
+    line-height: 200%;
+
+}
+.intro div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.intro > div h1:first-child {
+
+}
+.intro div button {
+    background-color: dodgerblue;
+    padding: 10px;
+    font-size: 105%;
+    border: none;
+    border-radius: 9.5px;
+    letter-spacing: 2px;
+}
+.intro div button a {
+    text-decoration: none;
+}
+.social-media {
+    padding: 10px;
+    margin-left: 130px;
+}
+.social-media img{
+    padding: 10px;
+    
+    width: 35px;
+}
+
+/* learn anywhere */
+.learn-anywhere {
+    background-color:  #212f3d ;
+}
+
+
+/* out of oridinary */
+.out-of-oridinary {
+    height: 50vh;
+}
+.container{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    width: 50px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border-radius: 7.5px;
+    padding: 30px ;
+    height: 200px;
+    width: 200px;
+    /* min-width: 200px;
+    max-width: 200px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
