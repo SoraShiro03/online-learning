@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    font-family: 'Lato', Roboto, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5em;
+    background-color: #F5FFFB;
+}
+
+.app {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 5% 7.5%;
+    border-radius: 1.5em;
+    max-width: 30em;
+}
+
+.app a {
+    color: black;
+
+}
+
+.plan-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.plan-section .plan-card {
+    border-radius: .7em;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #F4FFF9; */
+    background-color: #F5FFFB;
+    border: .1em solid #A2FEDB;
+
+}
+
+.plan-card .plan-title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.plan-card .plan-title input {
+
+    /* take this lines note */
+    transform: scale(2);
+    accent-color: #323836;
+
+}
+
+/* .plan-card .plan-title input::before,
+.plan-card .plan-title input::after {
+    content: "";
+} */
+
+
+.plan-section .plan-card .plan-description {
+    /* padding-right: 10%; */
+    margin-top: 0;
+    margin-inline: 8%;
+}
+
+
+
+
+
+.user-agreement-section {
+    margin-top: 3%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.user-agreement-section input {
+    transform: scale(2);
+}
+
+.user-agreement {
+    display: flex;
+    gap: 1em;
+    padding: 2%;
+    /* take note this line */
+    align-items: baseline;
+}
+
+
+/* confirm section */
+.confirm-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5em;
+}
+
+.confirm-section p {
+    margin: 0;
+
+    padding: 3% 0%;
+}
+
+.confirm-section .btn-1 {
+    background-color: #211E48;
+    color: white;
+    letter-spacing: .1em;
+    transition: .3s ease;
+}
+
+.confirm-section .btn-1:hover {
+    border: 1px solid #211E48;
+    background-color: white;
+    color: #211E48;
+    transition: .3s ease;
+}

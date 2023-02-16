@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+}
+nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+.logo--bar h1::before {
+    content: "";
+    background-image: url("square.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    padding: 10px 20px;
+    
+}
+
+.menu--bar {
+    display: flex;
+    gap: 1em;
+
+}
+.drop--down {
+    transition: .3s ease;
+}
+.drop--down--item {
+    display: none;
+    position: absolute;
+
+
+    opacity: 0;
+    transition: .3s ease;
+}
+.drop--down .drop--down--item .item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.item:hover {
+    background-image: url("images/home/arrow.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    transition: .3s ease;
+}
+.drop--down .drop--down--item .item > img {
+    width: 40px ;
+    height: auto;
+    
+}
+/* if hover drop--down will fall*/
+.drop--down:hover .drop--down--item {
+    display: flex;
+    flex-direction: column;
+opacity: 1;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+background-color: white;
+font-size: 120%;
+width: 300px;
+padding: 20px;
+
+transition: all .3s ease-in;
+}
+
+
+.user--auth {
+}
+.user--auth > button {
+    width: 100px;
+    font-size: 120%;
+    border: none;
+    padding: 5px;
+    border-radius: 9.5px;
+    background-color: dodgerblue;
+ 
+}
+.user--auth .btn--sign-in {
+    background-color: white;
+}
