@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Roboto', monospace, sans-serif;
 }
 nav {
     padding: 10px;
@@ -136,13 +137,84 @@ transition: .3s ease-in;
 
 /* learn anywhere */
 .learn-anywhere {
-    background-color:  #212f3d ;
+    background-color:   #1c2833  ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.learn-anywhere--content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 160%;
+    color: white;
+    background-color: #7da4c9;
+    width: 700px;
+    height: 100%;
+    border-top-right-radius:29.5px;
+    border-bottom-right-radius: 29.5px;
+    justify-content: center;
+    
+}
+.btn--courses {
+    display: flex;
+    gap: 1em;
+}
+.btn--courses > a{
+    text-decoration: none;
+    background-color: #374641;
+    padding: 7px 20px;
+    border-radius: 5.5px;
+}
+.btn--courses > a:hover {
+    background-color: #44d8a7;
 }
 
+.learn-anywhere--garalley {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    position: relative;
+}
+.learn-anywhere--garalley > img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 7.5px;
+}
+.learn-anywhere--garalley img:nth-child(1),
+.learn-anywhere--garalley img:nth-child(3),
+.learn-anywhere--garalley  img:nth-child(5) {
+    transform: translateY(25px);
+    animation: 3s moveUp infinite;
+}
+.learn-anywhere--garalley img:nth-child(2),
+.learn-anywhere--garalley img:nth-child(4),
+.learn-anywhere--garalley  img:nth-child(6) {
+    transform: translateY(-45px);
+}
+/* @keyframes moveUp {
+    from {
+        transform: translateY(45px);
+    }
+    to {
+        transform: translateY(-55px);
+    }
+} */
 
 /* out of oridinary */
 .out-of-oridinary {
-    height: 50vh;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.out-of-oridinary > h1{
+    text-align: center;
+    font-size: 36px;
+    
 }
 .container{
     display: flex;
@@ -158,10 +230,84 @@ transition: .3s ease-in;
     flex-direction: column;
     gap: 1.5em;
     border-radius: 7.5px;
-    padding: 30px ;
+    padding: 25px;
     height: 200px;
     width: 200px;
     /* min-width: 200px;
     max-width: 200px; */
+
+    border-top: 4px solid  #7da4c9 ;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: .3s ease;
+}
+/* .card::before {
+    position: relative;
+    content: "";
+    
+    border-bottom: 5px solid rebeccapurple;
+    width: 100%;
+    background-color: #212f3d;
+} */
+.card:hover {
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
+
+/* online course for */
+.online-course-for{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    background-color:   #1c2833  ;
+    color: white;
+    
+}
+.online-course-for > h1 {
+    font-size: 36px;
+    flex: .43;
+    border-right:2px solid #44d8a7;
+    height: 200px;
+}
+.online-course-for > h1::after {
+    content: "";
+    background-color: #44d8a7;
+}
+.card--group {
+    display: flex;
+    gap: 2.5em;
+ 
+}
+.card-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 20px;
+    width: 320px;
+    font-size: 20px;
+    flex: .63;
+
+}
+.card-desc >img {
+    width: 50px;
+    background-color: #44d8a7;
+    border-radius: 5.5px;
+    padding: 5px;
+}
+
+/* encrollment */
+.encrollment {
+    display: flex;
+font-size: 32px;
+justify-content: center;
+align-items: center;
+gap: 2em;
+padding: 40px;
+}
+.count-1 {
+    padding: 20px;
+border-left: 3.5px solid #44d8a7;
+}
+.count-1:first-child{
+    border: none;
 }
