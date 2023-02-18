@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', monospace, sans-serif;
+}
+.container{
+    display: flex;
+}
+.side--bar {
+    height: 100vh;
+    position: fixed;
+    flex: .3;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo--bar {
+   
+    margin-bottom: 40px;
+}
+.side--bar a{
+    text-decoration: none;
+    color: dodgerblue;
+   
+}
+
+.logo--bar h1::before {
+    content: "";
+    background-image: url("square.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    padding: 10px 20px;
+    
+}
+.profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.profile::after {
+    content: "";
+    
+   
+    border: 2px solid #5d6d7e;
+  }
+.profile p {
+    color:  #5d6d7e ;
+}
+.profile > img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.link--list{
+    margin-top: 30px;
+
+    font-size: 140%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.link {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    transition: .3s ease;
+    padding: 5px;
+}
+.link:hover{
+    background-color: #5d6d7e;
+    border-radius: 5.5px;
+    transition: .3s ease;
+}
+.link img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.link:last-child{
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    border: none;
+    margin-bottom: 60px;
+}
+.link:last-child:hover {
+    color: #5d6d7e;
+}
+
+/* course section */
+main {
+    margin-left: 400px;
+    flex: .7;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.search--bar {
+}
+.search--bar > input{
+    background-image: url("/images/courses-images/search.svg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 40px;
+    font-size: 130%;
+    text-align: center;
+    border-radius: 5.5px;
+}
+
+.coruse--container {
+    display: flex;
+    flex-direction: column;
+}
+.course--list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 30px;
+}
+.course--list a {
+    text-decoration: none;
+    color: #5d6d7e;
+}
+.course {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    gap: 1em;
+    align-items: center;
+}
+.course--content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+ .course > img{
+    width: 200px;
+    height: 200px ;
+    object-fit: cover;
+    transition: .3s ease;
+}
+.course:hover  .course--img {
+    width: 500px;
+    transition: .3s ease;
+}
