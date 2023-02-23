@@ -101,4 +101,127 @@ main {
 	margin-top: 20px;
     /* display: grid;
     grid-template-columns: 1fr .5fr; */
+	display: flex;
+	flex-direction: column;
+}
+
+.course-overview{
+
+}
+.card--group{
+	display: flex;
+	gap: 1.5em;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	padding: 15px;
+	width: 200px;
+	height: 125px;
+	gap: 1.5em;
+	border-radius: 12.5px;
+}
+.card > h1 {
+	
+	border-bottom: 3px solid #44d8a7;
+	width: 45px;
+}
+.card-content {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+.card-content > img{
+	width: 27px;
+	height: 27px;
+	background-color: #44d8a7;
+	padding: 5px;
+	border-radius: 8.5px;
+	object-fit: cover;
+}
+/* course you're taking */
+.course-section {
+	display: flex;
+	flex-direction: column;
+}
+.course-list-title {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 2em;
+	height: 30px;
+	padding: 10px;
+	margin-bottom: 10px;
+	
+}
+.course-list {
+
+}
+.course-list-title {
+	border-bottom: 2px solid #44d8a7;
+}
+
+.course-info{
+	height: 70px;
+	align-items: center;
+
+	gap: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;	
+}
+.course-info:hover{
+	color: dodgerblue;
+}
+.card-content img {
+	width: 30px;
+	height: 30px;
+}
+.instructor {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	
+}
+.instructor img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+/* recommended-section */
+.recommended-section {
+}
+.recommended-card-group {
+	border-radius: 9.5px;
+	display: flex;
+	gap: 1em;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.recommended-card {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: .7em;
+	font-size: 110%;
+	transition: .3s ease;
+}
+.recommended-card > img {
+	width: 275px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 9.5px;
+
+}
+.recommended-card p span {
+	color: #44d8a7;
+}
+.recommended-card:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transition: .3s ease;
 }
