@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', monospace, sans-serif;
+}
+body {
+    background-size: cover;
+    background-image: url("/images/tools/blob.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    background-color: white;
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 1280px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    gap: 10em;
+    align-items: center;
+    border-radius: 9.5px;
+    padding: 30px ;
+}
+.logo--link {
+    color: dodgerblue;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.logo--bar {
+   
+    margin-bottom: 40px;
+}
+.logo--bar h1::before {
+    content: "";
+    background-image: url("square.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    padding: 10px 20px;
+    
+}
+.welcome-image {
+    width: 600px;
+    height: 600px;
+    
+    
+}
+
+.register-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+.register-section input{
+    width: 300px;
+    height: 40px;
+    border: 3px solid dodgerblue;
+    border-radius: 22.5px;
+    font-size: 110%;
+}
+.register-section input:focus {
+    color: #44d8a7;
+    border-color: #44d8a7;
+    border: non;
+}
+.btn-register > a{
+    background-color: #44d8a7;
+    font-size: 120%;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 22.5px;
+    transition: .3s ease;
+}
+.btn-register > a:hover {
+    background-color: dodgerblue;
+    transition: .3s ease;
+}
+.register-section > h1 {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #44d8a7;
+}
