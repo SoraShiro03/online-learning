@@ -37,9 +37,7 @@ nav .logo--link{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    
-    padding: 10px 20px;
-    
+    padding: 10px 20px;  
 }
 
 .menu--bar {
@@ -47,17 +45,14 @@ nav .logo--link{
     gap: 1.5em;
 
 }
-.drop--down {
-    transition: .3s ease;
-   
-}
+
 .drop--down--item {
     display: none;
     position: absolute;
     gap: 1em;
 
     opacity: 0;
-    transition: .3s ease;
+
 }
  .item {
     display: flex;
@@ -66,18 +61,9 @@ nav .logo--link{
 }
 .item:hover{    
     color: #44d8a7;
-    transition: .3s ease;
+
 }
-/* .item:hover .item::after {
-    content: "";
-    padding: 20px;
-    background-color: darkcyan;
-    background-image: url("images/home/arrow.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    transition: .3s ease-in-out;
-} */
+
 .drop--down .drop--down--item .item > img {
     width: 40px ;
     height: auto;
@@ -93,14 +79,6 @@ background-color: white;
 font-size: 120%;
 width: 300px;
 padding: 20px;
-
-
-transition: .3s ease-in;
-}
-
-
-.user--auth {
-    
 }
 .user--auth > button {
     
@@ -118,7 +96,6 @@ transition: .3s ease-in;
 .btn--login a {
     color: white;
 }
-
 .user--auth .btn--sign-in {
     background-color: white;
 }

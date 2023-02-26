@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', monospace, sans-serif;
+    
+}
+body {
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-around;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    
+}
+nav .logo--link{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.logo--bar h1::before {
+    content: "";
+    background-image: url("square.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px 20px;  
+}
+
+.menu--bar {
+    display: flex;
+    gap: 1.5em;
+
+}
+
+.drop--down--item {
+    display: none;
+    position: absolute;
+    gap: 1em;
+
+    opacity: 0;
+
+}
+ .item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.item:hover{    
+    color: #44d8a7;
+
+}
+
+.drop--down .drop--down--item .item > img {
+    width: 40px ;
+    height: auto;
+    
+}
+/* if hover drop--down will fall*/
+.drop--down:hover .drop--down--item {
+    display: flex;
+    flex-direction: column;
+opacity: 1;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+background-color: white;
+font-size: 120%;
+width: 300px;
+padding: 20px;
+}
+.user--auth > button {
+    
+    width: 100px;
+    font-size: 120%;
+    border: none;
+    padding: 5px;
+    border-radius: 9.5px;
+    background-color: #1c2833;
+    
+}
+.btn--sign-in a {
+    color: #1c2833;
+}
+.btn--login a {
+    color: white;
+}
+.user--auth .btn--sign-in {
+    background-color: white;
+}
+
+/* main section */
+main {
+    display: flex;
+    font-size: 140%;
+    align-items: center;
+    margin: 100px;
+    gap: 2em;
+}
+main .about-us article > h1 {
+    color: dodgerblue;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+span {
+    color: dodgerblue;
+}

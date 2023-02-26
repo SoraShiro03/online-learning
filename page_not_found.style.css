@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', monospace, sans-serif;
+    
+}
+body {
+    animation: fadeIn 3s;
+}
+.container {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 140%;
+text-align: center;
+}
+h1 {
+    margin: 50px;
+}
+a {
+    
+    text-decoration: none;
+    background-color:#44d8a7;;
+    color: white;
+    padding: 10px;
+    border-radius: 22.5px;
+}
